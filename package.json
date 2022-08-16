@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "set NODE_ENV=development && vite",
-    "build": "set NODE_ENV=production &&tsc && vite build",
-    "preview": "set NODE_ENV=production vite preview"
+    "build": "set NODE_ENV=production&& tsc && vite build",
+    "preview": "set NODE_ENV=production && vite preview"
   },
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
@@ -20,6 +20,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.54.4",
+    "terser": "^5.14.2",
     "vite-plugin-imp": "^2.2.0"
   },
   "devDependencies": {

@@ -7,6 +7,7 @@ import legacy from '@vitejs/plugin-legacy'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicDir:'public',
   plugins: [
     reactRefresh(),
     react(),
@@ -102,7 +103,12 @@ export default defineConfig({
     // boolean | 'terser' | 'esbuild'
     minify: "terser", //terser 构建后文件体积更小
     //传递给 Terser 的更多 minify 选项。
-    terserOptions: {},
+    terserOptions: {
+       compress:{
+        drop_console:true,
+        drop_debugger:true
+      }
+    },
     //设置为 false 来禁用将构建后的文件写入磁盘
     write: true,
     //默认情况下，若 outDir 在 root 目录下，则 Vite 会在构建时清空该目录。
