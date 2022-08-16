@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="base-color">111111</div>
-      <div style={{ color: "pink" }}>222</div>
+      <div style={{ color: "pink" }}>2as111ss22ddd</div>
       <div>{count}</div>
       <Button type="primary" className="bgc" onClick={()=>handleCount('a')}>
         测试a

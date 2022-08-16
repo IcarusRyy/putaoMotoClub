@@ -45,7 +45,7 @@ export default defineConfig({
     open: false, // 服务启动的时候不自动在浏览器中打开应用
     strictPort: false, // 设置为true时端口被占用则直接退出，不会尝试下一个可用端口
     force: true, // 是否强制依赖预构建
-    hmr: false, // 禁用或配置HMR连接
+    hmr: true, // 禁用或配置HMR连接
   },
   resolve: {
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json"],
