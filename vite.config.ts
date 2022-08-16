@@ -4,12 +4,10 @@ import vitePluginImp from "vite-plugin-imp"
 import eslintPlugin from "vite-plugin-eslint"
 import autoprefixer from 'autoprefixer'
 import legacy from '@vitejs/plugin-legacy'
-import reactRefresh from '@vitejs/plugin-react-refresh'
 // https://vitejs.dev/config/
 export default defineConfig({
   publicDir:'public',
   plugins: [
-    reactRefresh(),
     react(),
     // 配置eslintPlugin
     eslintPlugin({
